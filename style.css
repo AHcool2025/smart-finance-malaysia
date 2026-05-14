@@ -1,0 +1,623 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+nav{
+    background:#0b1f3a;
+    padding:20px 60px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00c2ff;
+}
+
+.hero{
+    height:85vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(to right,#162447,#1f4068);
+
+    color:white;
+
+    padding:40px;
+}
+
+.hero-content h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+.btn{
+    background:#00c2ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#162447;
+
+    transform:scale(1.05);
+}
+
+.stats{
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:70px;
+}
+
+.card{
+    background:white;
+
+    width:280px;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    font-size:50px;
+
+    color:#162447;
+
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:18px;
+
+    line-height:1.5;
+}
+
+.page-banner{
+    background:linear-gradient(to right,#0f3460,#162447);
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 40px;
+}
+
+.page-banner h2{
+    font-size:55px;
+
+    margin-bottom:20px;
+}
+
+.page-banner p{
+    font-size:22px;
+
+    line-height:1.6;
+}
+
+
+.tips-section{
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:70px;
+
+    flex-wrap:wrap;
+}
+
+
+.tips-card{
+    background:white;
+
+    width:320px;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+
+.tips-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.tips-card h3{
+    color:#162447;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+}
+
+
+.tips-card p{
+    line-height:1.7;
+
+    font-size:18px;
+}
+
+
+.fen-section{
+    padding:60px;
+
+    text-align:center;
+}
+
+.fen-section h2{
+    font-size:45px;
+
+    margin-bottom:40px;
+
+    color:#162447;
+}
+
+.debt-banner{
+    background:linear-gradient(to right,#3a0d0d,#5c1a1a);
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 40px;
+}
+
+.debt-banner h2{
+    font-size:55px;
+
+    margin-bottom:20px;
+}
+
+.debt-banner p{
+    font-size:22px;
+
+    line-height:1.6;
+}
+
+
+.debt-tips-section{
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:70px;
+
+    flex-wrap:wrap;
+}
+
+
+.debt-card{
+    background:white;
+
+    width:320px;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    border-top:8px solid #c0392b;
+
+    transition:0.3s;
+}
+
+
+.debt-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.debt-card h3{
+    color:#5c1a1a;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+}
+
+
+.debt-card p{
+    line-height:1.7;
+
+    font-size:18px;
+}
+
+
+.warning-section{
+    padding:60px;
+
+    text-align:center;
+}
+
+
+.warning-section h2{
+    font-size:45px;
+
+    margin-bottom:40px;
+
+    color:#5c1a1a;
+}
+
+.scam-banner{
+    background:linear-gradient(to right,#001f3f,#00416a);
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 40px;
+}
+
+
+.scam-banner h2{
+    font-size:55px;
+
+    margin-bottom:20px;
+}
+
+
+.scam-banner p{
+    font-size:22px;
+
+    line-height:1.6;
+}
+
+
+.scam-tips-section{
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:70px;
+
+    flex-wrap:wrap;
+}
+
+
+.scam-card{
+    background:white;
+
+    width:320px;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    border-top:8px solid #00c2ff;
+
+    transition:0.3s;
+}
+
+
+.scam-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.scam-card h3{
+    color:#00416a;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+}
+
+
+.scam-card p{
+    line-height:1.7;
+
+    font-size:18px;
+}
+
+
+.cyber-section{
+    padding:60px;
+
+    text-align:center;
+}
+
+
+.cyber-section h2{
+    font-size:45px;
+
+    margin-bottom:40px;
+
+    color:#00416a;
+}
+
+.retirement-banner{
+    background:linear-gradient(to right,#14532d,#1e7a46);
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 40px;
+}
+
+
+.retirement-banner h2{
+    font-size:55px;
+
+    margin-bottom:20px;
+}
+
+
+.retirement-banner p{
+    font-size:22px;
+
+    line-height:1.6;
+}
+
+
+.retirement-section{
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:70px;
+
+    flex-wrap:wrap;
+}
+
+
+.retirement-card{
+    background:white;
+
+    width:320px;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    border-top:8px solid #1e7a46;
+
+    transition:0.3s;
+}
+
+
+.retirement-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.retirement-card h3{
+    color:#14532d;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+}
+
+
+.retirement-card p{
+    line-height:1.7;
+
+    font-size:18px;
+}
+
+
+.future-section{
+    padding:60px;
+
+    text-align:center;
+}
+
+
+.future-section h2{
+    font-size:45px;
+
+    margin-bottom:40px;
+
+    color:#14532d;
+}
+
+.about-banner{
+    background:linear-gradient(to right,#2b1055,#7597de);
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 40px;
+}
+
+
+.about-banner h2{
+    font-size:55px;
+
+    margin-bottom:20px;
+}
+
+
+.about-banner p{
+    font-size:22px;
+
+    line-height:1.6;
+}
+
+
+.about-section{
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    padding:70px;
+
+    flex-wrap:wrap;
+}
+
+
+.about-card{
+    background:white;
+
+    width:420px;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    border-top:8px solid #7597de;
+
+    transition:0.3s;
+}
+
+
+.about-card:hover{
+    transform:translateY(-10px);
+}
+
+
+.about-card h3{
+    color:#2b1055;
+
+    margin-bottom:20px;
+
+    font-size:30px;
+}
+
+
+.about-card p{
+    line-height:1.8;
+
+    font-size:18px;
+}
+
+
+.reference-section{
+    padding:60px;
+
+    text-align:center;
+}
+
+
+.reference-section h2{
+    font-size:45px;
+
+    margin-bottom:40px;
+
+    color:#2b1055;
+}
+
+
+.reference-card{
+    background:white;
+
+    width:70%;
+
+    margin:auto;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    line-height:2;
+
+    font-size:18px;
+}
+
+.hero-image{
+    width:500px;
+
+    margin-top:30px;
+    margin-bottom:30px;
+
+    display:block;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    border-radius:20px;
+}
